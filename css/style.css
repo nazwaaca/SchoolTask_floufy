@@ -1,0 +1,518 @@
+/* 
+Nama File       : style.css
+Deskripsi       : Style
+Dibuat Oleh     : Garly Nugraha, Jeremia Haposan Simarmata, dan Nazwa Fitriyani Zahra
+Tanggal Dibuat  : 25/11/2021
+*/
+
+/* Root */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =============== Header =============== */
+.header {
+    height: 60px;
+    line-height: 60px;
+    background: #0B4619;
+    padding: 0 60px;
+    color: #fff;
+}
+
+/* Logo */
+.logo {
+    float: left;
+    width: 120px;
+}
+
+/* Menu */
+.menu {
+    float: right;
+}
+
+.menu a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu-btn {
+    float: right;
+}
+
+.show-menu-btn i {
+    line-height: 60px;
+}
+
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #B0B244;
+}
+
+#check {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+/* =============== Content =============== */
+
+/* Sliders */
+.sliders {
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.row-sliders {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.row-sliders img {
+    width: 100%;
+    height: 610px;
+}
+
+.col-sliders {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image-sliders {
+    -webkit-animation-name: image-sliders;
+    -webkit-animation-duration: 1.5s;
+    animation-name: image-sliders;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes image-sliders {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes image-sliders {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* About */
+.about {
+    background-color: white;
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.text-first {
+    margin-right: 90px;
+}
+
+.text-first p {
+    width: 500px;
+    text-align: justify;
+    font-size: 15px;
+    color: #083016;
+    margin-bottom: 30px;
+}
+
+.text-first h1 {
+    width: 500px;
+    margin-top: 150px;
+    text-align: justify;
+    font-size: 30px;
+    color: #116530;
+    margin-bottom: 15px;
+}
+
+.about img {
+    width: 40%;
+    margin: auto;
+    margin-left: 70px;
+}
+
+.about a {
+    text-decoration: none;
+    color: #116530;
+}
+
+/* Plant */
+.plant {
+    background-color: #53616e;
+    padding: 30px;
+    margin-bottom: 75px;
+}
+
+.plant .title {
+    text-align: center;
+    color: #ffffff;
+}
+
+.plant .text {
+    text-align: center;
+    color: #ffffff;
+}
+
+.plant .line {
+    width: 200px;
+    height: 3px;
+    background: #ffffff;
+    margin: 10px auto 40px;
+}
+
+.side-text {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.side-text a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.row-plant {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.col-plant {
+    width: calc(25% - 10px);
+    overflow: hidden;
+}
+
+.image-plant {
+    width: 100%;
+    height: 175px;
+    border-radius: 6px;
+    transition: .3s linear;
+}
+
+.text-plant {
+    max-height: 100px;
+    background-color: #ffffffdd;
+    margin: 0 20px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 6px;
+    transform: translateY(-60px);
+    transition: .3s linear;
+}
+
+.text-plant h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.paragraf-plant {
+    font-size: 15px;
+    font-style: italic;
+    color: #116530;
+}
+
+.col-plant:hover .image-plant {
+    transform: translateY(20px);
+}
+
+.col-plant:hover .text-plant {
+    transform: translateY(-80px);
+}
+
+/* Article */
+.article .title {
+    text-align: center;
+    color: #116530;
+}
+
+.article .line {
+    width: 100px;
+    height: 3px;
+    background: #116530;
+    margin: 5px auto 40px;
+}
+
+.col-article {
+    width: 75%;
+    height: 15em;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 3px 5px 5px rgba(0, 20, 50, 0.06);
+}
+
+.article-body {
+    width: 12em;
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    padding: 1em;
+}
+
+.article-text {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+
+.article-text h2 {
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #5aab4e;
+}
+
+.article-text p {
+    text-indent: 40px;
+    text-align: justify;
+}
+
+.article img {
+    height: 100%;
+    width: 20em;
+    border-radius: 10px 0 0 10px;
+}
+
+/* =============== Footer =============== */
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #116530;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-footer h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 35px;
+}
+
+.main-footer p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 15px;
+    font-size: 14px;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-media a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+
+.social-media a:hover i {
+    color: aqua;
+}
+
+.copyright {
+    background: #0B4619;
+    /* width: 100vw; */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.copyright span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/* Mobile */
+@media screen and (max-width:1115px){
+    .text-plant {
+        width: auto;
+        min-height: 170px;
+        font-size: 2vmin;
+    }
+    .text-plant h3{
+        font-size: 2vmin;
+    }
+    .text-plant p{
+        font-size: 2vmin;
+    }
+    .col-article{
+        width: auto;
+        font-size: 2vmin;
+        height: auto;
+        }
+    .about{
+        position: auto;
+    }
+    .text-first h1{
+        font-size: 4vmin;
+    }
+    .text-first p{
+        font-size: 2vmin;
+    }
+    .text-first a{
+        font-size: 2vmin;
+    }
+    .title{
+        font-size: 4vmin;
+    }
+    
+}
+
+@media screen and (max-width:980px) {
+
+    /* =============== Header =============== */
+    .header {
+        padding: 0 35px;
+    }
+
+    /* Menu */
+    .show-menu-btn,
+    .hide-menu-btn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0B4619;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+
+    .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+    .text-first p{
+        width: auto;
+    }
+    .text-first h1{
+        width: auto;
+    }
+    .text-first a{
+        width: auto;
+    }
+    /* =============== Content =============== */
+    .row-plant {
+        justify-content: center;
+    }
+    .col-plant {
+        width: min(500px, 100%);
+    }
+    .image-plant{
+        height: auto;
+    }
+    .text-plant {
+        width: auto;
+        min-height: auto;
+        font-size: 3vmin;
+    }
+}
